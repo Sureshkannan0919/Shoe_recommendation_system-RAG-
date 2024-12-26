@@ -8,7 +8,7 @@ This repository contains the implementation of a Retrieval-Augmented Generation 
 - **Generative AI**: Employs a RAG approach to generate personalized shoe recommendations.
 - **Interactive Interface**: Integrated with Gradio for a user-friendly web-based interface.
 
-```
+
 
 ## Getting Started
 
