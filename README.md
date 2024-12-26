@@ -45,17 +45,6 @@ pip install pandas numpy spacy nltk transformers torch faiss-gpu gradio google-g
 1. Ensure your dataset contains relevant features for shoe recommendations (e.g., user preferences, shoe attributes).
 2. Preprocess the data using the provided `data_preprocessing.py` script.
 
-### Running the Application
-1. Train and initialize the RAG model using the script:
-   ```bash
-   python train_model.py
-   ```
-2. Launch the interactive Gradio interface:
-   ```bash
-   python app.py
-   ```
-3. Open the provided Gradio URL in your browser to interact with the system.
-
  Input**: The system takes user preferences as input through the Gradio interface.
 2. **Semantic Understanding**: Processes the input using NLP and tokenization techniques.
 3. **Information Retrieval**: FAISS retrieves relevant embeddings from the knowledge base.
