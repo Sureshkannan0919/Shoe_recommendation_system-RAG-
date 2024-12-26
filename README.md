@@ -8,27 +8,6 @@ This repository contains the implementation of a Retrieval-Augmented Generation 
 - **Generative AI**: Employs a RAG approach to generate personalized shoe recommendations.
 - **Interactive Interface**: Integrated with Gradio for a user-friendly web-based interface.
 
-## Technologies and Libraries Used
-The project uses the following Python libraries and modules:
-
-```python
-import warnings
-warnings.filterwarnings('ignore')
-import pandas as pd
-import numpy as np
-import ast
-import spacy
-import re
-import nltk
-from nltk.tokenize import word_tokenize
-from transformers import AutoTokenizer, AutoModel
-import torch
-import json
-from llmlingua import PromptCompressor
-import faiss
-import time
-import gradio as gr
-import google.generativeai as genai
 ```
 
 ## Getting Started
@@ -48,7 +27,7 @@ Make sure you have Python 3.8 or higher installed along with the following libra
 
 To install the required libraries, run:
 ```bash
-pip install pandas numpy spacy nltk transformers torch faiss-cpu gradio google-generativeai llmlingua
+pip install pandas numpy spacy nltk transformers torch faiss-gpu gradio google-generativeai llmlingua
 ```
 
 ### Installation
@@ -77,25 +56,7 @@ pip install pandas numpy spacy nltk transformers torch faiss-cpu gradio google-g
    ```
 3. Open the provided Gradio URL in your browser to interact with the system.
 
-## Project Structure
-```
-RAG-shoe-recommendation/
-├── data/
-├── models/
-├── scripts/
-│   ├── data_preprocessing.py
-│   ├── train_model.py
-│   └── app.py
-├── utils/
-│   ├── faiss_index.py
-│   ├── nlp_helpers.py
-│   └── recommendation_engine.py
-├── README.md
-└── requirements.txt
-```
-
-## How It Works
-1. **User Input**: The system takes user preferences as input through the Gradio interface.
+ Input**: The system takes user preferences as input through the Gradio interface.
 2. **Semantic Understanding**: Processes the input using NLP and tokenization techniques.
 3. **Information Retrieval**: FAISS retrieves relevant embeddings from the knowledge base.
 4. **Recommendation Generation**: A generative AI model (via `google.generativeai` and `llmlingua`) generates personalized shoe recommendations.
