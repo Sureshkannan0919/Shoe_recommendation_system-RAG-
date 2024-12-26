@@ -33,8 +33,7 @@ pip install pandas numpy spacy nltk transformers torch faiss-gpu gradio google-g
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/RAG-shoe-recommendation.git
-   cd RAG-shoe-recommendation
+   https://github.com/Sureshkannan0919/Shoe_recommendation_system-RAG-.git
    ```
 2. Install the required dependencies:
    ```bash
